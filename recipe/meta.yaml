@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-client-{{ version }}.tar.gz
   sha256: d76351c456fcf4067f59135c09a35008a120103621a1ac94cf9448db28ef2e1e
-  patches:
-    - dataclassesjson.patch
 
 build:
   noarch: python
