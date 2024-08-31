@@ -1,5 +1,5 @@
 {% set name = "unstructured-client" %}
-{% set version = "0.25.5" %}
+{% set version = "0.25.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-client-{{ version }}.tar.gz
-  sha256: adb97ea56ce65f8b277d5b05f093e9d13a3320ac8dea7265ffa71f5e13ed5f84
+  sha256: 488aef0b6e8fc342fa6c561be2ea4e9942d8bfb7cdbf8a3beac404b8d756f52a
 
 build:
   noarch: python
