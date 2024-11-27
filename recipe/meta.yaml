@@ -1,13 +1,13 @@
 {% set name = "unstructured-client" %}
-{% set version = "0.28.0" %}
+{% set version = "0.28.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 16284d1b8f95e5cdbefce3c400494dcc7b9d8a09689c4a6d48f049836961c027
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: aac11fe5dd6b8dfdbc15aad3205fe791a3834dac29bb9f499fd515643554f709
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ requirements:
     - mypy_extensions >=1.0.0
     - packaging >=23.1
     - pypdf >=4.0
-    - python-dateutil 2.8.2
+    - python-dateutil >=2.8.2,<3.0.0
     - requests >=2.31.0
     - six >=1.16.0
     - typing_inspect >=0.9.0,<0.10.0
