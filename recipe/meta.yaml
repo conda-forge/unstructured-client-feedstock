@@ -1,5 +1,5 @@
 {% set name = "unstructured-client" %}
-{% set version = "0.31.0" %}
+{% set version = "0.31.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6f8ce2cc47e8c79796a33bfb057ca33f1b47e4c43e95be6bbfeb515f43db5ad9
+  sha256: e120105a4d50d23ee608b8693a31e6fe1d25452a495622b0d8ac132365411ef1
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - pip
     - poetry
   run:
+    - typing-inspection >=0.4.0
     - aiofiles >=24.1.0
     - eval-type-backport >=0.2.0
     - pydantic >=2.10.3
