@@ -1,5 +1,5 @@
 {% set name = "unstructured-client" %}
-{% set version = "0.42.3" %}
+{% set version = "0.42.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a568d8b281fafdf452647d874060cd0647e33e4a19e811b4db821eb1f3051163
+  sha256: 144ecd231a11d091cdc76acf50e79e57889269b8c9d8b9df60e74cf32ac1ba5e
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ requirements:
     - marshmallow >=3.19.0
     - mypy_extensions >=1.0.0
     - packaging >=23.1
-    - pypdf >=4.0
+    - pypdf >=6.2.0
     - python-dateutil >=2.8.2
     - requests >=2.31.0
     - six >=1.16.0
