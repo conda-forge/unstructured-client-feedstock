@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: unstructured-client
-  version: 0.46.4
+  version: 0.47.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 5fac534f60cb64f212890f33cc9a80940582e7343ed940d4571a9a7770fd6f62
+  sha256: 10f2293fc6ad8d196bc72f46ef9b91a1acdc46d0318f5e302859cd5692cbdec3
 
 build:
   number: 0
@@ -31,6 +31,7 @@ requirements:
     - requests-toolbelt >=1.0.0
     - python >=${{ python_min }}
     - pypdf >=6.9.2
+    - certifi >=2026.10.19
 tests:
   - python:
       imports:
